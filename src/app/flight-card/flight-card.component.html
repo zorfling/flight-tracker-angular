@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-title>{{ flight.flight.iataNumber }}</mat-card-title>
+  <mat-card-subtitle>Airline: {{ flight.airline.name }}</mat-card-subtitle>
+  <mat-card-subtitle>Status: {{ flight.status }}</mat-card-subtitle>
+  <mat-card-subtitle
+    >Estimated:
+    {{ flight.arrival.estimatedTime | date: 'medium' }}</mat-card-subtitle
+  >
+  <mat-card-subtitle
+    >Scheduled:
+    {{ flight.arrival.scheduledTime | date: 'medium' }}</mat-card-subtitle
+  >
+  <mat-card-subtitle> From: {{ flight.departure.iataCode }}</mat-card-subtitle>
+</mat-card>
