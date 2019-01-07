@@ -1,3 +1,7 @@
-<div class="flight-list" *ngFor="let flight of flights">
-  <app-flight-card [flight]="flight"></app-flight-card>
+<div class="flight-list">
+  <p *ngIf="!flights">Loading&hellip;</p>
+  <app-flight-card
+    [flight]="flight"
+    *ngFor="let flight of flights"
+  ></app-flight-card>
 </div>
