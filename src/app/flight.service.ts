@@ -14,7 +14,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class FlightService {
-  private flightsUrl = 'http://aviation-edge.com/v2/public/';
+  private flightsUrl = 'https://aviation-edge.com/v2/public/';
   private apiKey = '247031-cad766';
 
   constructor(
