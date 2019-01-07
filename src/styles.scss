@@ -1,10 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
-.flight-list {
+.app {
   margin: 0 auto;
   width: 450px;
+}
 
+.loading-spinner {
+  text-align: center;
+
+  mat-spinner {
+    margin: 0px auto 1rem;
+  }
+}
+
+.flight-list {
   mat-card {
     margin-bottom: 1rem;
   }

@@ -1,5 +1,8 @@
 <div class="flight-list">
-  <p *ngIf="!flights">Loading&hellip;</p>
+  <mat-card class="mat-body loading-spinner" *ngIf="!flights">
+    <mat-spinner></mat-spinner>
+    Loading&hellip;
+  </mat-card>
   <app-flight-card
     [flight]="flight"
     *ngFor="let flight of flights"

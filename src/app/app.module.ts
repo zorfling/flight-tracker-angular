@@ -1,7 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule } from '@angular/material';
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatProgressSpinnerModule
+} from '@angular/material';
 
 import { registerLocaleData } from '@angular/common';
 import localeEnAU from '@angular/common/locales/en-AU';
@@ -20,6 +24,7 @@ import { FlightListComponent } from './flight-list/flight-list.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
+    MatProgressSpinnerModule,
     AppRoutingModule,
     HttpClientModule
   ],
