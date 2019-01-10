@@ -3,6 +3,9 @@
     <mat-spinner></mat-spinner>
     Loading&hellip;
   </mat-card>
+  <mat-card class="mat-body" *ngIf="flights && flights.length === 0">
+    No flights found&hellip;
+  </mat-card>
   <app-flight-card
     [flight]="flight"
     *ngFor="let flight of flights"

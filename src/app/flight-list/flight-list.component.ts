@@ -14,7 +14,7 @@ export class FlightListComponent implements OnInit {
 
   getFlights() {
     this.flightService.getAirportFlights('BNE').subscribe(flights => {
-      this.flights = flights.filter(flight => flight.status !== Status.Landed);
+      this.flights = flights; //.filter(flight => flight.status !== Status.Landed);
     });
   }
   ngOnInit() {
